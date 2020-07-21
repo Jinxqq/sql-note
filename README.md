@@ -127,8 +127,22 @@ VALUES ('百度','https://www.baidu.com/','4','CN');
 
 
 7，update
+UPDATE 语句用于更新表中已存在的记录。
+语法:
+```sql
+UPDATE table_name
+SET column1=value1,column2=value2,...
+WHERE some_column=some_value;
+```
+例如：
+```sql
+UPDATE Websites 
+SET alexa='5000', country='USA' 
+WHERE name='菜鸟教程';
 
-
+```
 
 8，delete
+
+
 
