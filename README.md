@@ -139,10 +139,26 @@ WHERE some_column=some_value;
 UPDATE Websites 
 SET alexa='5000', country='USA' 
 WHERE name='菜鸟教程';
-
 ```
 
 8，delete
 
+DELETE 语句用于删除表中的行。
 
+语法:
+
+```sql
+DELETE FROM 表名称 WHERE 列名称 = 值
+```
+
+例如：
+
+```sql
+DELETE FROM Person WHERE LastName = 'Wilson' 
+
+// delete all
+DELETE FROM table_name
+// or
+DELETE * FROM table_name
+```
 
