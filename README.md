@@ -162,3 +162,52 @@ DELETE FROM table_name
 DELETE * FROM table_name
 ```
 
+
+
+#### 2，senior	
+
+**1 ,TOP 子句**
+
+TOP 子句用于规定要返回的记录的数目。
+
+对于拥有数千条记录的大型表来说，TOP 子句是非常有用的。
+
+注释：并非所有的数据库系统都支持 TOP 子句。
+
+**SQL Server 的语法：**
+
+```sql
+SELECT TOP number|percent column_name(s)
+FROM table_name
+```
+
+**MySQL 语法**
+
+```sql
+SELECT column_name(s)
+FROM table_name
+LIMIT number
+```
+
+**Oracle 语法**
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE ROWNUM <= number
+```
+
+**SQL TOP PERCENT 实例**
+
+上面的 "Persons" 表中选取 50% 的记录可以使用下面的 SELECT 语句：
+
+```sql
+SELECT TOP 50 PERCENT * FROM Persons
+```
+
+
+
+
+
+
+
